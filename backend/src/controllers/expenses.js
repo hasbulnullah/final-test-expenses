@@ -1,4 +1,4 @@
-import Expense from '../models/Expenses.js';
+import Expense from '../models/expenses.js';
 
 export const getExpenses = async (req, res) => {
     const expenses = await Expense.find({ user: req.user.userId });
