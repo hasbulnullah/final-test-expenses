@@ -4,14 +4,14 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 
-import authRoutes from './routes/auth.js';
-import expenseRoutes from './routes/expenses.js';
+import authRoutes from './backend/src/routes/auth.js';
+import expenseRoutes from './backend/src/routes/expenses.js';
 
 dotenv.config();
 
-const app = express();
+const app = express( );
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'http://localhost:27017', credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
