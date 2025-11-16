@@ -8,7 +8,7 @@ export default function App() {
     const [user, setUser] = useState(null);
     const [expenses, setExpenses] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [editingExpense, setEditingExpense] = useState(null); // for editing
+    const [editingExpense, setEditingExpense] = useState(null); 
     const [formData, setFormData] = useState({ title: '', notes: '', amount: '', category: '', date: '' });
 
     useEffect(() => {
